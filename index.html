@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>  Les commandes VIM </title>
+	<meta charset="utf8" lang="fr">
+
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen and (min-width: 380px ) and (max-width: 1400px)"/>
+
+
+
+</head>
+
+<body>
+<section>
+	
+	<h1>  Vim en bref </h1>
+
+		<h3> Les bases de Vim </h3>
+			<p> Le curseur se déplace avec les touches fléchées ou les touches hjkl.
+		gauche : touche h
+		bas : touche j
+		haut : touche k
+		droite :touche l.</br>
+		
+		Pour entrer dans Vim (à l’invite $) tapez vim [Fichier] <Entrée>.
+		Pour quitter Vim sans enregistrer, tapez <Échap> :q ! <Entrée>.
+		Pour quitter Vim en enregistrant, tapez <Échap> :wq <Entrée>, ou également
+		<Échap> :x <Entrée>, ou encore <Échap> ZZ. 
+			</p>
+			<ul>  
+				<li> Effacements:</li>
+				<p>  Pour effacer du curseur jusqu’à la fin d’un mot tapez dw.</br>
+		Pour effacer du curseur jusqu’à la fin d’une ligne tapez d$.</br>
+		Pour effacer toute une ligne tapez dd.</p>
+
+				<li> Annulations : </li>
+				<p>  Pour annuler des actions précédentes, tapez u minuscule, comme undo. Pour annuler tous les changements sur une ligne tapez U majuscule. Pour refaire tapez <Ctrl>-R comme redo.
+		Insertion :
+		Taper o ouvre une ligne sous le curseur et y place celui-ci en mode insertion. Taper un O majuscule ouvre une ligne au dessus de la ligne où se trouve le curseur.
+		Tapez un a (append) pour insérer du texte après le caractère où se trouve le curseur. Taper un A majuscule ajoute du texte à la fin de la ligne.
+		Pour remplacer le caractère sous le curseur, tapez r (replace) suivi du caractère qui remplacera l’original.
+		Taper un R majuscule active le mode remplacement jusqu’à ce que la touche <Échap> soit appuyée pour en sortir.</p>
+
+			</ul>
+
+			
+
+
+
+	<h3> Insertion: </h3>
+
+
+	<h3> Les Commandes Externes </h3>
+		<p> Les commandes d’effacement, comme dd (delete), en réalité coupent le texte.
+		Pour coller le texte en mémoire après la position courante du curseur, tapez p. Si une ligne complète a été effacée, elle sera placée sous la ligne du curseur. P majuscule colle le texte avant (ou au dessus) la position courante du curseur. </br> 
+		Le changement vous permet de changer l’objet spécifié, du curseur jusqu’à la fin de l’objet. Par exemple, tapez cw (comme change word) pour changer du curseur jusqu’à la fin du mot, c$ pour changer jusqu’à la fin d’une ligne. </br> 
+		Le format d’utilisation pour le changement est : [nombre] c objet, ou encore c [nombre] objet.
+		Pour copier du texte tapez yw, ou y$, ou yy (yank), avec le même format que précédemment indiqué.
+		Position, recherche et remplacement
+		Ctrl-G affiche votre position dans le fichier et l’état de celui-ci. G vous place à la fin du fichier. Un numéro de ligne suivi de G vous place à cette ligne.
+		Taper / suivi d’un texte recherche ce texte vers l’avant. Taper ? suivi d’un texte recherche ce texte vers l’arrière.
+		Après une recherche tapez n pour trouver l’occurrence suivante dans la même direction ou Maj-N pour rechercher dans la direction opposée.
+		Taper%lorsquelecurseurestsurdesdélimiteursdebloc(,),[,],{ou}déplace celui-ci sur le caractère correspondant. </p>
+
+
+
+	<h3> Autres Commandes </h3>
+			<p>: !<commande> exécute une commande externe.
+		: !ls affiche le contenu du dossier courant.</br>
+		:!rm <Fichier>efface<Fichier>.</br>
+		:w <Fichier> enregistre le fichier Vim courant avec le nom Fichier.</br>
+		:#,#w <Fichier> enregistre les lignes # à # dans Fichier.</br> 
+		:r <Fichier> lit et inclus Fichier dans le fichier courant à partir de la posi- tion du curseur.  </p>
+
+		Vous pouvez accéder à l’aide sur à peu près n’importe quel sujet en donnant desargumentsàlacommande :help.Essayezparexemple(n’oubliezpasd’ap- puyer sur <Entrée>) :
+		<ul>  
+			<li> – :help w </li></br>
+			<li>– :help c_</li>
+		</ul>
+
+			</section>
+</body>
+
+</html>

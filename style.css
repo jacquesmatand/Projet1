@@ -1,0 +1,26 @@
+
+@media screen and (min-width: 380px) {
+	h1{
+
+		color: #b88;
+		font-size: 30px;
+		font-family: arial;
+		text-align: center;
+		background-color: #888;
+	}
+
+	h3{
+		color: #aCC;
+		font-size: 20px;
+		font-family: garamond;
+
+	}
+
+	p{
+
+		font-size: 14px;
+		font-family: garamond, sans-serif;
+	}
+
+
+} 
